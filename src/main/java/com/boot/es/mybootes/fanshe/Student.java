@@ -44,4 +44,9 @@ public class Student {
     public String toString() {
         return "tosting方法";
     }
+
+
+    public static void main(String[] args) {
+        System.out.println("测试main反射"+args);
+    }
 }

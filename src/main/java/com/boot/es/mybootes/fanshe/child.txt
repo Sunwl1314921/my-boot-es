@@ -1,0 +1,2 @@
+package=com.boot.es.mybootes.fanshe.Child
+method=show

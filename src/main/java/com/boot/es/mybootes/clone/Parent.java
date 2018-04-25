@@ -5,7 +5,7 @@ import lombok.Data;
 import java.io.Serializable;
 
 @Data
-public class Parent implements  Cloneable,Serializable{
+public class Parent implements Cloneable, Serializable {
 
 
     private int id;
@@ -18,12 +18,12 @@ public class Parent implements  Cloneable,Serializable{
 
     private int age;
 
-    public  Parent(int id,String name,String city,int age,Boolean sex){
-        this.id=id;
-        this.name=name;
-        this.sex=sex;
-        this.city=city;
-        this.age=age;
+    Parent(int id, String name, String city, int age, Boolean sex) {
+        this.id = id;
+        this.name = name;
+        this.sex = sex;
+        this.city = city;
+        this.age = age;
     }
 
     @Override
