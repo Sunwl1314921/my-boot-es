@@ -6,7 +6,6 @@ import org.apache.poi.hssf.usermodel.HSSFWorkbook
 import javax.servlet.http.HttpServletResponse
 
 /**
- * Created by apple on 2018/1/17.
  * 导出xls的类
  */
 class ExportXlsUtlis {
@@ -62,7 +61,8 @@ class ExportXlsUtlis {
                     + fieldName.substring(0, 1).toUpperCase()
                     + fieldName.substring(1))
             val method = tclass.getMethod(getMethodName)
-            val value = method.invoke(obj, *method.parameters)
+//            val value = method.invoke(obj, *method.parameters)
+            val value = method.invoke(obj, *method.parameterAnnotations)
             println("fieldName=$fieldName | value=$value")
             if (value != null) {
                 cell.setCellValue(HSSFRichTextString(value.toString()))
