@@ -1,0 +1,5 @@
+### 拼团订单列表
+POST http://localhost.ytx.cc:7470/collective/order
+Cookie:{sellerType=2; visitorUniqueCode=ef019ff2-a482-0f60-6ccc-6528ad4dd262; visitFrom=%u76F4%u63A5%u8BBF%u95EE; remember-me=MjMyNDoxNTI2NTIyMzI1NzE2OjNjNDE0NjFlYzc4MmYyZDEwMDk1MjE2MTliZGJhN2My; nickname=neptune; headImg=account/2324/3e7a062530c8456782e53b5b4dcf1033.jpg}
+
+###

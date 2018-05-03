@@ -1,0 +1,3 @@
+jdbc.username=root
+jdbc.passWd=123456
+jdbc.url=jdbc:mysql://127.0.0.1:3305/springbootdb?useUnicode=true&characterEncoding=utf8&autoReconnect=true&zeroDateTimeBehavior=convertToNull&&allowMultiQueries=true
