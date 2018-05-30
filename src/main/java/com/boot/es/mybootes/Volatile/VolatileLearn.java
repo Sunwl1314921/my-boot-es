@@ -1,6 +1,8 @@
 package com.boot.es.mybootes.Volatile;
+import com.boot.es.mybootes.yuanma.HelloWorld;
 
-
+import java.beans.PropertyDescriptor;
+import java.lang.reflect.Method;
 import java.util.concurrent.CountDownLatch;
 
 /**
@@ -17,6 +19,7 @@ import java.util.concurrent.CountDownLatch;
 public class VolatileLearn {
 
     private volatile boolean flag = true;
+
     // 期望run只运行一次，对flag进行getAndOperate操作，此时使用volatile是危险的
     void run() {
         if (flag) {
@@ -25,8 +28,21 @@ public class VolatileLearn {
         }
     }
 
-    public static void main(String[] args) {
-        test();
+    public static void main(String[] args) throws Exception {
+//        test();
+//
+//        String introspection=Introspector.decapitalize("VolatileLearn");
+
+        HelloWorld h1 = new HelloWorld(2, "haha");
+        PropertyDescriptor propertyDescriptor = new PropertyDescriptor("age", HelloWorld.class);
+        Method method = propertyDescriptor.getReadMethod();
+        Object o = method.invoke(h1);
+        System.out.println(o);
+
+        Method m2 = propertyDescriptor.getWriteMethod();
+        m2.invoke(h1, 12);
+        System.out.println(h1.getAge());
+
     }
 
     static void test() {
@@ -43,7 +59,9 @@ public class VolatileLearn {
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
-                };
+                }
+
+                ;
             };
             t.start();
         }

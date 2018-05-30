@@ -1,11 +1,39 @@
 ###plugs插件地址
 GET http://plugins.jetbrains.com/plugin/10369-rest-editor-client-contrib
+
+### 拼团订单列表 本地环境 ytx-trade-mobile-server项目 -->CollectiveItemOrderController
+GET http://localhost.ytx.cc:7470/collective/order
+Cookie:{sellerType=2; visitorUniqueCode=6fb0d820-faf8-aa4f-f0aa-54ba115bbd6b; visitFrom=%u76F4%u63A5%u8BBF%u95EE; remember-me=MTg0NjoxNTI4MTExMjMyMTgyOjU0MDAyN2M3ZWU0MGI5NDllMGE3ZWRkMzg0NzU3ZWY1; nickname=qwer; headImg=account/1846/c7364059547445cda6ed3d899dcb4f2e.jpg}
 ### 拼团订单列表
-GET http://localhost.ytx.cc:7470/collective/order?status=3
-Cookie:{sellerType=2; visitorUniqueCode=ef019ff2-a482-0f60-6ccc-6528ad4dd262; visitFrom=%u76F4%u63A5%u8BBF%u95EE; remember-me=MjMyNDoxNTI2NTIyMzI1NzE2OjNjNDE0NjFlYzc4MmYyZDEwMDk1MjE2MTliZGJhN2My; nickname=neptune; headImg=account/2324/3e7a062530c8456782e53b5b4dcf1033.jpg}
+GET http://api.ytx5.com/trade/order/collective/order?orderId=&status=
+Cookie:{sellerType=2; visitorUniqueCode=6fb0d820-faf8-aa4f-f0aa-54ba115bbd6b; visitFrom=%u76F4%u63A5%u8BBF%u95EE; remember-me=MTg0NjoxNTI4MTAxNjAzMDAwOjU2NDhmZDM1MGY2MTI3NDNlYTIzMjZlYTBhYjdiYzgw; nickname=qwer; headImg=account/1846/c7364059547445cda6ed3d899dcb4f2e.jpg}
 
 ###拼团订单详情
 GET http://localhost.ytx.cc:7280/collective/collective-item?orderNo=Y180502180043634298
 Cookie:{sellerType=2; visitorUniqueCode=ef019ff2-a482-0f60-6ccc-6528ad4dd262; visitFrom=%u76F4%u63A5%u8BBF%u95EE; remember-me=MjMyNDoxNTI2NTIyMzI1NzE2OjNjNDE0NjFlYzc4MmYyZDEwMDk1MjE2MTliZGJhN2My; nickname=neptune; headImg=account/2324/3e7a062530c8456782e53b5b4dcf1033.jpg}
+
+### 拼团seller
+GET http://localhost.ytx.cc:2450/collective/item/activity
+Cookie:{searchingText=; createAtStart=; createAtStop=; buyerNickName=; itemName=; status=; isNeedInvoice=; pageNumber=1; sellerType=2; visitorUniqueCode=1999ee82-03cf-eed4-4f17-72f652ae2c0c; visitFrom=%u76F4%u63A5%u8BBF%u95EE; nickname=ytx%E6%B5%8B%E8%AF%95%E8%B6%85%E5%B8%82; headImg=; remember-me=NDUxMTY6MTUyNzgyNDI1NzEzMzphNjMwZmZhNjc1MzdjOTc5ZDhjNDY5ZjE2ZjYzYjJhYw}
+
+###seller 拼团报名商品
+GET http://localhost.ytx.cc:2450/collective/item/check?collectiveActivityId=275
+Cookie:{searchingText=; createAtStart=; createAtStop=; buyerNickName=; itemName=; status=; isNeedInvoice=; pageNumber=1; sellerType=2; nickname=ytx%E6%B5%8B%E8%AF%95%E8%B6%85%E5%B8%82; headImg=; visitorUniqueCode=6dd60955-582f-47d3-822e-af706f4de33b; visitFrom=%u76F4%u63A5%u8BBF%u95EE; remember-me=NDUxMTY6MTUyODE2NzM2MDM2NTpmOWNkMWVkYmM5NDMwM2Y0NjE3OGFjMTIzZGQyYzFjMQ}
+
+###ylf个人中心接口 local
+GET http://localhost.ytx.cc:12282/buyer/show
+Cookie: {sellerType=2; visitorUniqueCode=6dd60955-582f-47d3-822e-af706f4de33b; visitFrom=%u76F4%u63A5%u8BBF%u95EE; remember-me=MTg0NjoxNTI4MTY4OTM1ODg5OjMzN2U5MDM4MzFhOWE4NTNkM2U3MmM5YjM3MDQyYTdl; nickname=qwer; headImg=account/1846/c7364059547445cda6ed3d899dcb4f2e.jpg}
+
+###ylf个人中心接口 ytx5
+GET http://api.ytx5.com/ylf/buyer/buyer/show
+Cookie: {sellerType=2; visitorUniqueCode=6dd60955-582f-47d3-822e-af706f4de33b; visitFrom=%u76F4%u63A5%u8BBF%u95EE; remember-me=MTg0NjoxNTI4MTY4OTM1ODg5OjMzN2U5MDM4MzFhOWE4NTNkM2U3MmM5YjM3MDQyYTdl; nickname=qwer; headImg=account/1846/c7364059547445cda6ed3d899dcb4f2e.jpg}
+
+###ylf个人地址列表 ytx5
+GET http://api.ytx5.com/ylf/buyer/buyer/address/list
+Cookie: {sellerType=2; visitorUniqueCode=6dd60955-582f-47d3-822e-af706f4de33b; visitFrom=%u76F4%u63A5%u8BBF%u95EE; remember-me=MTg0NjoxNTI4MTY4OTM1ODg5OjMzN2U5MDM4MzFhOWE4NTNkM2U3MmM5YjM3MDQyYTdl; nickname=qwer; headImg=account/1846/c7364059547445cda6ed3d899dcb4f2e.jpg}
+
+###拼团商品买家查看
+GET http://localhost.ytx.cc:7280/collective/collective-items
+Cookie: {visitorUniqueCode=07a9d988-4888-55bd-1278-d14b46465d85; visitFrom=%u76F4%u63A5%u8BBF%u95EE; remember-me=MToxNTI4NzcwNDQ5NDgxOjE4MGM1MDE4OWVjZjIwNmZkYzYxNDg2MzJhZDFlMjYz; nickname=operator; headImg=; visitorCode=ce6536a0-0126-4795-b33c-b3baad76a38e; JSESSIONID=B55D090C13AF29BFE5E18BEBCF52AF6A}
 
 ###

@@ -1,14 +1,11 @@
 package com.boot.es.mybootes.validtor;
 
 
-import org.springframework.util.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.validation.Errors;
 import org.springframework.validation.ValidationUtils;
 import org.springframework.validation.Validator;
 
-/**
- * Created by wb-zhangkenan on 2016/9/2.
- */
 public class PersonalValidtor implements Validator{
 
     /**
