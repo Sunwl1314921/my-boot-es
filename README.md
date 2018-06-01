@@ -9,4 +9,5 @@ order 订单流水号
 shejimoshi 设计模式学习
 springaop aop使用
 validtor 新增实体校验
+yibu 同步，线程池异步，@Async注解异步 参考：https://blog.csdn.net/v2sking/article/details/72795742
 
