@@ -1,5 +1,5 @@
 package com.boot.es.mybootes.Volatile;
-import com.boot.es.mybootes.yuanma.HelloWorld;
+import com.boot.es.mybootes.yuanma.ArrayListTest;
 
 import java.beans.PropertyDescriptor;
 import java.lang.reflect.Method;
@@ -33,8 +33,8 @@ public class VolatileLearn {
 //
 //        String introspection=Introspector.decapitalize("VolatileLearn");
 
-        HelloWorld h1 = new HelloWorld(2, "haha");
-        PropertyDescriptor propertyDescriptor = new PropertyDescriptor("age", HelloWorld.class);
+        ArrayListTest h1 = new ArrayListTest(2, "haha");
+        PropertyDescriptor propertyDescriptor = new PropertyDescriptor("age", ArrayListTest.class);
         Method method = propertyDescriptor.getReadMethod();
         Object o = method.invoke(h1);
         System.out.println(o);

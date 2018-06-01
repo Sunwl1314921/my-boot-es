@@ -1,6 +1,6 @@
 package com.boot.es.mybootes.fanshe.shuzu;
 
-import com.boot.es.mybootes.yuanma.HelloWorld;
+import com.boot.es.mybootes.yuanma.ArrayListTest;
 
 import java.beans.PropertyDescriptor;
 import java.lang.reflect.Method;
@@ -15,7 +15,7 @@ public class TestPropertyDescriptor {
     }
 
     public static void main(String[] args) throws  Exception{
-        HelloWorld he=new HelloWorld(12,"哈哈");
+        ArrayListTest he=new ArrayListTest(12,"哈哈");
         getFieldName(he,"age");
     }
 

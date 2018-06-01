@@ -6,8 +6,6 @@ import java.util.Date;
 /**
  * 订单流水号
  *
- * @author zhaoya
- * @author chenlushun
  */
 public class GenerateOrderSn {
     /**
