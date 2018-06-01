@@ -3,13 +3,13 @@ package com.boot.es.mybootes.yuanma;
 import java.text.SimpleDateFormat;
 import java.util.*;
 
-public class HelloWorld {
+public class ArrayListTest {
 
     private int age;
 
     private String name;
 
-    public HelloWorld(int age, String name) {
+    public ArrayListTest(int age, String name) {
         this.age = age;
         this.name = name;
     }
@@ -95,13 +95,6 @@ public class HelloWorld {
 //            }
 //        }
 
-        int i = 4;
-        if (i != 4 && i != 3) {
-            System.out.println("1");
-        } else {
-            System.out.println("2");
-        }
-
 
         //把时间戳转换成时间
         String res;
@@ -110,6 +103,9 @@ public class HelloWorld {
         Date date = new Date(lt);
         res = simpleDateFormat.format(date);
         System.out.println(res);
+
+        List lists=new LinkedList();
+
     }
 
 
