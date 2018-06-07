@@ -10,7 +10,6 @@ public class TestPassworld implements PasswordEncoder {
 
     private static final String SITE_WIDE_SECRET = "XXXXXXXXXXXX";
     private static final PasswordEncoder encoder = new StandardPasswordEncoder(SITE_WIDE_SECRET);
-
     /**
      * 加密方法
      * @param rawPassword 被加密的字符串
@@ -20,7 +19,6 @@ public class TestPassworld implements PasswordEncoder {
     public String encode(CharSequence rawPassword) {
         return encoder.encode(rawPassword);
     }
-
     /**
      * 比较是否相等
      * @param rawPassword 加密后的字符串
@@ -37,18 +35,14 @@ public class TestPassworld implements PasswordEncoder {
         }
         return isSuccess;
     }
-
     public static void main(String[] args) {
         TestPassworld util = new TestPassworld();
-
         //a33746f52f500280df3c8116934b505905d7d4d9daee6390656b9c4fe67382df46c00c8b38915803
         String passworld = util.encode("123456");
-
         //System.out.println(passworld);
-
         boolean falg = util.matches("123456","a33746f52f500280df3c8116934b505905d7d4d9daee6390656b9c4fe67382df46c00c8b38915803");
-
         System.out.println(falg);
+
     }
 
 }
