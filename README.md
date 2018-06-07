@@ -12,6 +12,7 @@
 * validtor 新增实体校验
 * yibu 同步，线程池异步，@Async注解异步 参考：https://blog.csdn.net/v2sking/article/details/72795742
 * jiami spring-security 加密+校验学习第一章 初始 用户名：user 密码：启动时候会打印在控制台
+* myTomcate 手写简单的tomcate
 
 * cookie todo 学习---> QuickRegisterController 265行
 
