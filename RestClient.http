@@ -4,9 +4,10 @@ GET http://plugins.jetbrains.com/plugin/10369-rest-editor-client-contrib
 ### 拼团订单列表 本地环境 ytx-trade-mobile-server项目 -->CollectiveItemOrderController
 GET http://localhost.ytx.cc:7470/collective/order
 Cookie:{sellerType=2; visitorUniqueCode=6fb0d820-faf8-aa4f-f0aa-54ba115bbd6b; visitFrom=%u76F4%u63A5%u8BBF%u95EE; remember-me=MTg0NjoxNTI4MTExMjMyMTgyOjU0MDAyN2M3ZWU0MGI5NDllMGE3ZWRkMzg0NzU3ZWY1; nickname=qwer; headImg=account/1846/c7364059547445cda6ed3d899dcb4f2e.jpg}
+
 ### 拼团订单列表
 GET http://api.ytx5.com/trade/order/collective/order?orderId=&status=
-Cookie:{sellerType=2; visitorUniqueCode=6fb0d820-faf8-aa4f-f0aa-54ba115bbd6b; visitFrom=%u76F4%u63A5%u8BBF%u95EE; remember-me=MTg0NjoxNTI4MTAxNjAzMDAwOjU2NDhmZDM1MGY2MTI3NDNlYTIzMjZlYTBhYjdiYzgw; nickname=qwer; headImg=account/1846/c7364059547445cda6ed3d899dcb4f2e.jpg}
+Cookie:{visitorUniqueCode=5e1b3a7e-32a6-75f5-ac06-b2f1320249e1; visitFrom=%u76F4%u63A5%u8BBF%u95EE; remember-me=NDUyNTk6MTUyOTQ4NjUxODIyMzo2Mjc2YzFmZWY5MjlhNWQ5YjU1NWQyMjQ0NjU0YjY2Yg; nickname=y23492_81259; headImg=http://g2.ytx5.com/ytx/default-t-img-2.png}
 
 ###拼团订单详情
 GET http://localhost.ytx.cc:7280/collective/collective-item?orderNo=Y180502180043634298
