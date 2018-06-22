@@ -37,4 +37,11 @@ Cookie: {sellerType=2; visitorUniqueCode=6dd60955-582f-47d3-822e-af706f4de33b; v
 GET http://localhost.ytx.cc:7280/collective/collective-items
 Cookie: {visitorUniqueCode=07a9d988-4888-55bd-1278-d14b46465d85; visitFrom=%u76F4%u63A5%u8BBF%u95EE; remember-me=MToxNTI4NzcwNDQ5NDgxOjE4MGM1MDE4OWVjZjIwNmZkYzYxNDg2MzJhZDFlMjYz; nickname=operator; headImg=; visitorCode=ce6536a0-0126-4795-b33c-b3baad76a38e; JSESSIONID=B55D090C13AF29BFE5E18BEBCF52AF6A}
 
+###Validtor校验
+GET http://localhost:8090/test2?name=123
+
+###
+
+GET https://post.mp.qq.com/kan/article/1376401258-120369113.html?_wv=2147483777&sig=5a3428b8fe97a239ba815e222e646b35&article_id=120369113&time=1528772410&_pflag=1&x5PreFetch=1
+
 ###
