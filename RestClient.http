@@ -3,7 +3,12 @@ GET http://plugins.jetbrains.com/plugin/10369-rest-editor-client-contrib
 
 ### 拼团订单列表 本地环境 ytx-trade-mobile-server项目 -->CollectiveItemOrderController
 GET http://localhost.ytx.cc:7470/collective/order
-Cookie:{sellerType=2; visitorUniqueCode=6fb0d820-faf8-aa4f-f0aa-54ba115bbd6b; visitFrom=%u76F4%u63A5%u8BBF%u95EE; remember-me=MTg0NjoxNTI4MTExMjMyMTgyOjU0MDAyN2M3ZWU0MGI5NDllMGE3ZWRkMzg0NzU3ZWY1; nickname=qwer; headImg=account/1846/c7364059547445cda6ed3d899dcb4f2e.jpg}
+
+
+### 本地订单列表
+GET http://localhost.ytx.cc:7470/collective/order
+Cookie: {sellerType=2; visitorCode=dd8dbbb0-6812-492c-83a3-d99b2caf314e; visitorUniqueCode=32bcbef7-899f-02e8-c9f6-c804eb7b4db8; visitFrom=%u76F4%u63A5%u8BBF%u95EE; nickname=%E9%A3%9E%E6%9C%BA; headImg=account/45336/8be6603d722c4483b879bf2e3fa90145.jpg; remember-me=NDUzMzY6MTUzMzgwMDMyMDc3OTphZDdlZjUyNTJhMjM0YzE4MDY1NzI4ZmFlY2FhZDI3Yg
+}
 
 ### 拼团订单列表
 GET http://api.ytx5.com/trade/order/collective/order?orderId=&status=
@@ -11,11 +16,14 @@ Cookie:{visitorUniqueCode=5e1b3a7e-32a6-75f5-ac06-b2f1320249e1; visitFrom=%u76F4
 
 ###拼团订单详情
 GET http://localhost.ytx.cc:7280/collective/collective-item?orderNo=Y180502180043634298
-Cookie:{sellerType=2; visitorUniqueCode=ef019ff2-a482-0f60-6ccc-6528ad4dd262; visitFrom=%u76F4%u63A5%u8BBF%u95EE; remember-me=MjMyNDoxNTI2NTIyMzI1NzE2OjNjNDE0NjFlYzc4MmYyZDEwMDk1MjE2MTliZGJhN2My; nickname=neptune; headImg=account/2324/3e7a062530c8456782e53b5b4dcf1033.jpg}
-
+Cookie:{sellerType=2; visitorCode=dd8dbbb0-6812-492c-83a3-d99b2caf314e; visitorUniqueCode=32bcbef7-899f-02e8-c9f6-c804eb7b4db8; visitFrom=%u76F4%u63A5%u8BBF%u95EE; nickname=%E9%A3%9E%E6%9C%BA; headImg=account/45336/8be6603d722c4483b879bf2e3fa90145.jpg; remember-me=NDUzMzY6MTUzMzgwMDMyMDc3OTphZDdlZjUyNTJhMjM0YzE4MDY1NzI4ZmFlY2FhZDI3Yg}
 ### 拼团seller
 GET http://localhost.ytx.cc:2450/collective/item/activity
 Cookie:{searchingText=; createAtStart=; createAtStop=; buyerNickName=; itemName=; status=; isNeedInvoice=; pageNumber=1; sellerType=2; visitorUniqueCode=1999ee82-03cf-eed4-4f17-72f652ae2c0c; visitFrom=%u76F4%u63A5%u8BBF%u95EE; nickname=ytx%E6%B5%8B%E8%AF%95%E8%B6%85%E5%B8%82; headImg=; remember-me=NDUxMTY6MTUyNzgyNDI1NzEzMzphNjMwZmZhNjc1MzdjOTc5ZDhjNDY5ZjE2ZjYzYjJhYw}
+
+###拼团商品买家查看
+GET http://localhost.ytx.cc:7280/collective/collective-items
+Cookie: {visitorUniqueCode=07a9d988-4888-55bd-1278-d14b46465d85; visitFrom=%u76F4%u63A5%u8BBF%u95EE; remember-me=MToxNTI4NzcwNDQ5NDgxOjE4MGM1MDE4OWVjZjIwNmZkYzYxNDg2MzJhZDFlMjYz; nickname=operator; headImg=; visitorCode=ce6536a0-0126-4795-b33c-b3baad76a38e; JSESSIONID=B55D090C13AF29BFE5E18BEBCF52AF6A}
 
 ###seller 拼团报名商品
 GET http://localhost.ytx.cc:2450/collective/item/check?collectiveActivityId=275
@@ -33,15 +41,50 @@ Cookie: {sellerType=2; visitorUniqueCode=6dd60955-582f-47d3-822e-af706f4de33b; v
 GET http://api.ytx5.com/ylf/buyer/buyer/address/list
 Cookie: {sellerType=2; visitorUniqueCode=6dd60955-582f-47d3-822e-af706f4de33b; visitFrom=%u76F4%u63A5%u8BBF%u95EE; remember-me=MTg0NjoxNTI4MTY4OTM1ODg5OjMzN2U5MDM4MzFhOWE4NTNkM2U3MmM5YjM3MDQyYTdl; nickname=qwer; headImg=account/1846/c7364059547445cda6ed3d899dcb4f2e.jpg}
 
-###拼团商品买家查看
-GET http://localhost.ytx.cc:7280/collective/collective-items
-Cookie: {visitorUniqueCode=07a9d988-4888-55bd-1278-d14b46465d85; visitFrom=%u76F4%u63A5%u8BBF%u95EE; remember-me=MToxNTI4NzcwNDQ5NDgxOjE4MGM1MDE4OWVjZjIwNmZkYzYxNDg2MzJhZDFlMjYz; nickname=operator; headImg=; visitorCode=ce6536a0-0126-4795-b33c-b3baad76a38e; JSESSIONID=B55D090C13AF29BFE5E18BEBCF52AF6A}
-
 ###Validtor校验
 GET http://localhost:8090/test2?name=123
 
+### 2.5.18商超运费及限售相关 8936862666826 6958493138215
+GET  http://localhost.ytx.cc:7280/items/6958493138215/regions/331100000000/fees
 ###
+GET http://api.ytx5.com/item/items/6958493138215/regions/330100000000/fees
+###7470
+GET http://api.ytx5.com/item/items/8936862666826/regions/330100000000/fees
 
-GET https://post.mp.qq.com/kan/article/1376401258-120369113.html?_wv=2147483777&sig=5a3428b8fe97a239ba815e222e646b35&article_id=120369113&time=1528772410&_pflag=1&x5PreFetch=1
+###拼团搜索商品 测试三级类目问题
+POST http://seller.ytx5.com/collective/item/search/items
+Cookie:{sellerType=2; visitorUniqueCode=2e805194-7a4c-a380-8951-7ad6d86afca7; visitFrom=%u76F4%u63A5%u8BBF%u95EE; nickname=ytx%E6%B5%8B%E8%AF%95%E8%B6%85%E5%B8%82; headImg=; remember-me=NDUxMTY6MTUzMTM2NzUyNjYzMDo3OTMzN2M0ZTBhYjZjZmU3MDA3MjBlYmQ1YWY5NDNmYw}
+
+### 测试本地 商品详情
+GET http://localhost.ytx.cc:7280/items/8936862666826
+
+###测试本地 返回不限售的区域集合:得到所有的cityCode  开启区域限售,可购买的区域列表  6958493138215
+GET http://localhost.ytx.cc:7280/items/sale_regions/17?itemId=6958493138215
+
+###查看省市区域集合
+GET http://localhost.ytx.cc:2450/shippingTemplate/editBeforeQuery?shippingTemplateId=326
+Cookie: {sellerType=2; nickname=ytx%E6%B5%8B%E8%AF%95%E8%B6%85%E5%B8%82; headImg=; visitorUniqueCode=e407a45b-e3ed-631a-9530-be026afbe2d8; visitFrom=%u76F4%u63A5%u8BBF%u95EE; visitorCode=641d82cd-a4a7-42a5-9be2-9380449731e0; remember-me=NDUxMTY6MTUzMTcyNTkzOTE2NTowMDEzMGU4NjcxNWE0NDA2MjFjNzI1ZjJjZWQ2YTZiZg}
 
 ###
+GET http://localhost.ytx.cc:2450/freight/1
+Cookie: {nickname=ytx%E6%B5%8B%E8%AF%95%E8%B6%85%E5%B8%82; headImg=; sellerType=2; remember-me=NDUxMTY6MTUzMTcyNjIyMTE5MTo2YmVjNjQ3ZmVhZmI4YzM3OTRhMTlmNTMxMmUxZTM4Zg}
+
+###
+GET http://localhost.ytx.cc:2450/freight/1
+
+###
+GET http://api.ytx5.com/item/items/8936862666826
+
+###
+GET http://localhost.ytx.cc:3080/item/9054242310511
+Cookie: {sellerType=2; visitorUniqueCode=b97eb74f-35fb-abc4-96e1-a1fc4a73cf6a; visitFrom=%u76F4%u63A5%u8BBF%u95EE; visitorCode=dd8dbbb0-6812-492c-83a3-d99b2caf314e; remember-me=NDUyNTk6MTUzMzEyMDYxNDA1Mjo0MTNiZDRkMWE3Njg1ZWY3YjMzMzk2Yzg5MTllN2FkMg; nickname=y23492_81259; headImg=http://g2.ytx5.com/ytx/default-t-img-2.png; JSESSIONID=44216555F744BF67650F8998B3942B54}
+
+###上架商品
+GET http://localhost.ytx.cc:2450/item/on_shelves?itemId=4873138079160&updatedAt=1531987292000
+Cookie: {sellerType=2; visitorCode=dd8dbbb0-6812-492c-83a3-d99b2caf314e; visitorUniqueCode=57bb4f25-e774-f3c3-3261-8a619245ccca; visitFrom=%u76F4%u63A5%u8BBF%u95EE; remember-me=NDUxMTY6MTUzMzE5Njg0Mjk0OTo1MDdjOTk5OGExYjFmMDY3MDY0OGE1YTVmZGQ1YTUxOQ; nickname=ytx%E6%B5%8B%E8%AF%95%E8%B6%85%E5%B8%82; headImg=}
+
+###购买
+GET https://trade.ytx.com/ajax/order_submit
+Cookie: {nickname=%E5%B0%8F%E4%B8%80%E4%BD%B3; headImg=account/181/011cf63b8c70454d825e516d61cec1f2.jpg; visitorCode=45ffef87-c789-4799-9317-1145f1d47ba5; shareToken=ZTzyVUWcuL465BMxHWRH1A==; visitorUniqueCode=715a55e3-ef08-6cee-6aaf-2fba39fc4b7b; visitFrom=%u76F4%u63A5%u8BBF%u95EE; remember-me=MTgxOjE1MzMyNjU5ODg4NDQ6ZjcwN2RiMmVhMWRmNGQ3MGQ0MGIxZTA1NjJmY2E4ODQ}
+
+
