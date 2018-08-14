@@ -86,7 +86,7 @@ public class PayUtil {
 	}
 
 	/**
-	 * 构造签名123
+	 * 构造签名12344
 	 * 
 	 * @param params
 	 * @param encode
