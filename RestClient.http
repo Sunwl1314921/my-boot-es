@@ -92,4 +92,12 @@ Cookie: {nickname=%E5%B0%8F%E4%B8%80%E4%BD%B3; headImg=account/181/011cf63b8c704
 ### 分销员＞分销员列表＞查看 提现记录
 GET http://localhost.ytx.cc:2450/salesman/cash_apply/list?salesmanAccountId=4001
 Cookie: {sellerType=2; searchingText=; createAtStart=; createAtStop=; buyerNickName=; itemName=; status=; isNeedInvoice=; pageNumber=1; nickname=ytx%E6%B5%8B%E8%AF%95%E8%B6%85%E5%B8%82; headImg=; visitorCode=46e4eec8-4f8e-465f-9f26-1d60115145a9; visitorUniqueCode=00ac923b-cc4b-3b28-fd23-4793493a62e6; visitFrom=%u76F4%u63A5%u8BBF%u95EE; remember-me=NDUxMTY6MTUzNDcyOTUyODAwMzo2MTU0YWU4ZTY4OTRjY2YyZGU0ZWZjYzFlZDRhYzE2NQ}
+
+###企业零钱支付个人
+POST localhost:8090/transfer/pay?openid=owdb10KHQM0fPYJOp5MJJQkz-7lY
+
 ###
+GET http://localhost.ytx.cc:2450/salesman/cash/apply/list?salesmanAccountId=4001
+Cookie: {sellerType=2; visitorCode=64411585-949a-4d9f-a26d-85b3ff5239b5; headImg=; JSESSIONID=0E62B0B9B154661C36D4E00E865BD2B7; nickname=ytx%E6%B5%8B%E8%AF%95%E8%B6%85%E5%B8%82; remember-me=NDUxMTY6MTUzNTUxMzgzOTY1NzplNWQ5YjljNTk2NjYyMjQ3NzE5NGI0YjViMzg5ZTA4MA}
+
+### 测试requestBody
