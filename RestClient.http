@@ -101,3 +101,6 @@ GET http://localhost.ytx.cc:2450/salesman/cash/apply/list?salesmanAccountId=4001
 Cookie: {sellerType=2; visitorCode=64411585-949a-4d9f-a26d-85b3ff5239b5; headImg=; JSESSIONID=0E62B0B9B154661C36D4E00E865BD2B7; nickname=ytx%E6%B5%8B%E8%AF%95%E8%B6%85%E5%B8%82; remember-me=NDUxMTY6MTUzNTUxMzgzOTY1NzplNWQ5YjljNTk2NjYyMjQ3NzE5NGI0YjViMzg5ZTA4MA}
 
 ### 测试requestBody
+GET http://localhost:8080/kafka/send?msg=123
+
+###

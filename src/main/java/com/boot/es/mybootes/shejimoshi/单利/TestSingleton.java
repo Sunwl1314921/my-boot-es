@@ -10,11 +10,11 @@ public class TestSingleton {
 
     boolean lock ;
 
-    public boolean isLock() {
+     boolean isLock() {
         return lock;
     }
 
-    public void setLock(boolean lock) {
+     void setLock(boolean lock) {
         this.lock = lock;
     }
 
