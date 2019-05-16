@@ -1,4 +1,4 @@
-package com.boot.security.mybootsecurity.controller;
+package com.boot.security.mybootsecurity;
 
 
 import org.apache.commons.collections4.MapUtils;
@@ -15,9 +15,9 @@ public class Test {
         Map<String, Object> result = new HashMap<>();
         result.put("error","swl");
         result.put("error",12);
-        result.put("error","boy");
-        result.put("error","heh");
 
+        result.put("error","heh");
+        result.put("error","boy");
         String suffix = "请编辑商品补充必要信息后再做*保存*操作!";
         String error = MapUtils.getString(result, "error");
         error = error + suffix;
